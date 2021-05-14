@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cotizá el seguro de tu auto fácil y rápido. Las mejores coberturas del mercado en sun sólo lugar. El mejor precio para tu seguro garantizado.">
+    <meta name="keywords" content="seguro, cotizador, cotizacion, autos, seguro de auto, ahorrar, aseguradora, automotor, coberturas, terceros completo, seguro de daños, todo riesgo">
+    <meta name="author" content="Dardo Andrés Lopez">
+    
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico" sizes="128x128">
+    <title>Proyecto Final Coderhouse</title>
+  </head>
+  <body id="bodyHome" class="animated fadeIn">
+    <div class="portada">
+      <div class="contenedorCubo">
+        <div class="cubo">
+          <div class="cara" id="frente"></div>
+          <div class="cara" id="izquierda"></div>
+          <div class="cara" id="derecha"></div>
+          <div class="cara" id="arriba"></div>
+          <div class="cara" id="abajo"></div>
+          <div class="cara" id="trasera"></div>
+        </div>
+      </div>
+        <div.titulosPortada>
+          <h2 class="h2-portada">InsuPlain</h2>
+          <h1 class="h1-portada">Cotizador de Seguros</h1>
+        </div>
+    <nav class="menuBody">
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./pages/planes.html">Planes</a>
+        </li>
+        <li>
+          <a href="./pages/quienes-somos.html">Quienes Somos</a>
+        </li>
+        <li id="desplegable">
+          <a href="./pages/siniestros.html">Siniestros <span class="flecha">&#x25BC</span></a>
+          <ul class="submenu">
+            <li>
+              <a  href="./pages/asistencia.html">Asistencia</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./pages/beneficios.html">Beneficios</a>
+        </li>
+        <li>
+          <a href="./pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  <div class="homeContainer">
+      
+      <section id="home-top">
+        <h2 class="h1-home">El mejor seguro para tu auto está acá.</h2>
+        <div class="titulos-home">
+          <h2 class="h2-home">
+            No busques más, disfrutá nuestro plan más vendido con un 25% off por 4
+            meses.
+          </h2>
+            <img class="animated  bounceInRight" src="./img/auto-grua.png" alt="dibujo grua remolcando auto" />
+        </div>
+        <input type="checkbox" id="btnModale">
+        <label id="btnModalee" class="lblBtnModal" for="btnModale">Cotizar gratis! <span class="badge badge-warning">25% off!</span></label>
+        <div id="modal">
+          <div class="contenedorModal">
+            <header>Ingesá tus datos</header>
+            <label  for="btnModale" class="btnModal">X</label>
+            <div class="container contenidoModal">
+              <iframe src="./pages/paso2.html" frameborder="0"></iframe>
+              <!--<form class="Cotizador p-5" id="cotizadorP1" action="CotizadorP1">
+                <label for="email" class="input-label mb-2">Email</label>
+                <input type="email" class="form-control mb-2" name="email">
+                <label class="input-label mb-2" for="Nombre">Nombre</label>
+                <input type="text" class="form-control mb-2" name="Nombre">
+                <label class="input-label mb-2" for="Nacimiento">Fecha de Nacimiento</label>
+                <input type="date" class="form-control mb-4" name="nacimiento">
+                <a href="./pages/cotizador.html"><button type="button" class="btn btn-primary form-control">Siguiente</button></a>
+              </form>-->
+            </div>
+          </div>
+        </div>
+        
+        <div class="reviews">
+          <div class="rv"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><p>Excelente, fácil de contratar.</p></div>
+          <div class="rv"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><p>Rápidos, expeditivos, me encanta!</p></div>
+          <div class="rv"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><p>Déme dos!</p></div>
+        </div>
+        <div class="como-contratar">
+          <h3>¿Como Contratar InsuPlain?</h3>
+          <p>
+            ¡Es súper cómodo! Podés hacer todo 100% desde tu celular, desde donde
+            estés.
+          </p>
+          <div class="tira-imagenes">
+            <div>
+              <img class="animated infinite pulse delay-0s" src="./img/select-car.svg" alt="seleccionando auto" />
+              <p>Seleccioná tu auto.</p>
+            </div>
+            <div>
+              <img class="animated infinite pulse delay-0s" src="./img/select-plan.svg" alt="seleccionando plan" />
+              <p>Elegí el mejor plan para vos.</p>
+            </div>
+            <div>
+              <img class="animated infinite pulse delay-0s" src="./img/select-payment.svg" alt="seleccionando pago" />
+              <p>Cargá tus datos de pago.</p>
+            </div>
+            <div>
+              <img class="animated infinite pulse delay-0s" src="./img/select-done.svg" alt="mano con llaves" />
+              <p>¡Listo! Ya tenés tu seguro.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="home-med">
+        
+          <div>
+            <h2 id="tituloHomeMed">Insu-plain en números</h2>
+          </div>
+        
+        <div class="tiraImagenesSeccionMedia">
+          <div class="tarjetasTiraImagenes1">
+            <span><strong>24HS</strong>  Asistencia online.</span>
+            <img src="./img/smartphone.svg" alt="smartphone">
+          </div>
+          <div class="tarjetasTiraImagenes1">
+            <span><strong>+2.000</strong> Cotizaciones diarias.</span>
+            <img src="./img/puntero.svg" alt="puntero mouse">
+          </div>
+          <div class="tarjetasTiraImagenes1">
+            <span><strong>+30.000</strong>  Asegurados.</span>
+            <img src="./img/rueda.svg" alt="rueda de auto">
+          </div>
+          <div class="tarjetasTiraImagenes1">
+            <span><strong>Grúas en 50´</strong> Tiempo promedio.</span>
+            <img src="./img/llave.svg" alt="llave francesa">
+          </div>
+          <div class="tarjetasTiraImagenes2" id="tarjetaGrande">
+            <span><h2>Asistencia al viajero en la región.</h2> Si tenés un problema mecánico a más de 100 km de tu casa, también vamos a estar ahí para vos. Te brindamos un auto sustituto, asistencia médica y hasta un conductor profesional si no podés manejar.</span>
+            <img src="./img/region.svg" alt="sudamerica en mapa">
+          </div>
+          <div class="tarjetasTiraImagenes2">
+            <h2>La asistencia más rápida.</h2>
+            <img src="./img/motoquero.svg" alt="motoquero">
+          </div>
+          <div class="tarjetasTiraImagenes2">
+            <h2>Bonificaciones en tu cuota.</h2>
+            <img src="./img/chanchito2.svg" alt="chanchito alcancia">
+          </div>
+          <div class="tarjetasTiraImagenes3">
+            <span>Lubrimovil a domicilio.</span>
+            <img src="./img/aceite2.svg" alt="aceite">
+          </div>
+          <div class="tarjetasTiraImagenes3">
+            <span>Atención propia si te chocan.</span>
+            <img src="./img/wrench (1).svg" alt="llave francesa">
+          </div>
+          <div class="tarjetasTiraImagenes3">
+            <span>Dos traslados  gratis en  Cabify.</span>
+            <img src="./img/car-front.svg" alt="auto Cabify">
+          </div>
+          <div class="tarjetasTiraImagenes3">
+            <span>Resolvé todo  desde la app.</span>
+            <img src="./img/telefono-con-circulo.svg" alt="telefono en mano">
+          </div>
+
+        </div>
+      </section>
+      <section id="home-bottom">
+        <div>
+          <h2>¿Por qué elegirnos?</h2>
+          <div class="contenedorCir">
+            <div class="cirImg">
+              <img src="./img/cir-letrachica.svg" alt="contrato">
+              <h3>Sin letra chica.</h3>
+              <p>Tu seguro tiene que ser fácil de entender. Si algo no es claro, preguntanos.</p>
+            </div>
+            <div class="cirImg">
+              <img src="./img/cir-estamossiempre.svg" alt="telefonista">
+              <h3>Estamos siempre.</h3>
+              <p>Encontranos a través de nuestra pp, por teléfono, chat, mail o redes sociales.</p>
+            </div>
+            <div class="cirImg">
+              <img src="./img/cir-todoentucelular.svg" alt="celuklar">
+              <h3>Todo en tu celular.</h3>
+              <p>Tu mundo está conectado y tu seguro también. Gestioná todo desde tu teléfono.</p>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section>
+  </div>
+  </div>
+      
+    
+  <footer class="text-center text-lg-start">
+    
+    <div class="container p-4">
+    
+      <div class="row">
+    
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">InsuPlain</h5>
+
+          <div class="container mt-5 ">
+            <a href="#"><i class="fab fa-facebook-f m-2 fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram m-2 fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter m-2 fa-2x"></i></a>
+            <a href="#"><i class="fab fa-whatsapp m-2 fa-2x"></i></a>
+
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0 p-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Planes</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Quienes Somos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Siniestros</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Beneficios</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-dark" href="#">Dardo Lopez</a>
+      </div>
+    
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5641704aaa.js" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
