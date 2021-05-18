@@ -1903,38 +1903,6 @@ video {
   color: crimson;
 }
 
-#precios__card__img-3 {
-  width: 12em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#precios__card__img-2 {
-  width: 8em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#precios__card__img-1 {
-  width: 4em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.menu__ul {
-  height: 90px;
-  margin-bottom: 50px;
-}
-
-#precios__card__btn {
-  border-radius: 9999px;
-  height: 45px;
-  font-size: 20px;
-}
-
 /*----------------------------PLANES2----------------------------------------------*/
 .planes {
   width: 90%;

@@ -1503,27 +1503,13 @@ video {
 }
 
 /*-----------------------------RESULTADO----------------------------------------*/
+
 @each $semaforo in green, gold, crimson {
   .precios__card__h3--#{$semaforo} {
     color: #{$semaforo};
   }
 }
 
-@for $i from 3 through 1 {
-  #precios__card__img-#{$i} {
-    width: 4em * $i;
-    align-self: center;
-  }
-}
-.menu__ul {
-  height: 90px;
-  margin-bottom: 50px;
-}
-#precios__card__btn {
-  border-radius: 9999px;
-  height: 45px;
-  font-size: 20px;
-}
 /*----------------------------PLANES2----------------------------------------------*/
 .planes {
   width: 90%;
