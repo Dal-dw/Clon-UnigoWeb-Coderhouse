@@ -167,8 +167,9 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
   justify-content: center;
 }
 .menuBody a:hover {
-  color: chocolate;
+  color: rgb(6, 211, 211);
   transition: 0.3s ease;
+  text-decoration: none;
 }
 .menuBody ul {
   list-style: none;
@@ -231,7 +232,7 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
   font-size: 20px;
 }
 .menu ul li a:hover {
-  color: rgb(223, 161, 27);
+  color: rgb(6, 202, 202);
   transition: 0.2s ease;
 }
 
@@ -388,7 +389,7 @@ footer {
 #bodyHome .lblBtnModal:hover {
   background: rgb(2, 2, 156);
   transform: scale(1.03);
-  box-shadow: #0575e6 0px 0px 10px 5px;
+  box-shadow: rgb(3, 214, 214) 0px 0px 10px 5px;
   transition: 0.5s ease;
 }
 .boton-cotizar {
@@ -1567,6 +1568,15 @@ video {
           border: none;
           border-radius: 9999px;
           font-size: 20px;
+          cursor: default;
+        }
+        .planes__cards__card__medio__btn > a {
+          text-decoration: none;
+          color: white;
+        }
+        .planes__cards__card__medio__btn > a:hover {
+          color: rgb(12, 212, 212);
+          transition: ease 0.3s;
         }
       }
       .planes__cards__card__footer {

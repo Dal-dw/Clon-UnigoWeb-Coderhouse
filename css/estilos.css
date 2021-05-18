@@ -221,9 +221,10 @@ iframe {
 }
 
 .menuBody a:hover {
-  color: chocolate;
+  color: #06d3d3;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .menuBody ul {
@@ -305,7 +306,7 @@ iframe {
 }
 
 .menu ul li a:hover {
-  color: #dfa11b;
+  color: #06caca;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
@@ -515,8 +516,8 @@ footer {
   background: #02029c;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  -webkit-box-shadow: #0575e6 0px 0px 10px 5px;
-          box-shadow: #0575e6 0px 0px 10px 5px;
+  -webkit-box-shadow: #03d6d6 0px 0px 10px 5px;
+          box-shadow: #03d6d6 0px 0px 10px 5px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -1973,6 +1974,18 @@ video {
   border: none;
   border-radius: 9999px;
   font-size: 20px;
+  cursor: default;
+}
+
+.planes .planes__cards .planes__cards__card .planes__cards__card__medio .planes__cards__card__medio__btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+.planes .planes__cards .planes__cards__card .planes__cards__card__medio .planes__cards__card__medio__btn > a:hover {
+  color: #0cd4d4;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 .planes .planes__cards .planes__cards__card .planes__cards__card__footer {
