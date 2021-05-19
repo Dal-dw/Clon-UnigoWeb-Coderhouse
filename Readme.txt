@@ -22,6 +22,7 @@ Comprimidas dos imagenes grandes del sitio.
 Links a redes sociales en el footer.
 Diseño responsive.
 
+Cambio prueba github
 
 
 
