@@ -958,8 +958,8 @@ footer {
     -ms-grid-columns: 45% 45%;
         grid-template-columns: 45% 45%;
     padding-left: 30px;
-    gap: 40px;
-    row-gap: 30px;
+    gap: 10px;
+    row-gap: 10px;
     background: transparent;
     height: auto;
     width: 90%;
@@ -973,9 +973,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     border: #d1d4f2 1px solid;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-weight: bold;
@@ -991,8 +990,8 @@ footer {
     padding: 5px;
   }
   .tarjetasTiraImagenes1 span {
-    width: 2em;
-    font-size: 15px;
+    width: 8em;
+    font-size: 18px;
     padding: 5px;
     line-height: 15px;
   }
@@ -1014,7 +1013,7 @@ footer {
         justify-content: space-around;
     height: 200px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
   }
   #tarjetaGrande {
     -ms-grid-column: 1;
@@ -1053,14 +1052,15 @@ footer {
     width: 100%;
   }
   .tarjetasTiraImagenes2 img {
-    width: 8em;
+    width: 10em;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
   .tarjetasTiraImagenes2 h2,
   span {
     width: 100%;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 20px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1097,7 +1097,7 @@ footer {
 }
 
 /*------- IPAD PRO----*/
-@media screen and (max-width: 3550) and (min-width: 1028px) {
+@media screen and (max-width: 1300px) and (min-width: 1074px) {
   .h1-home {
     font-size: 36px;
     color: #1b26bc;
@@ -1173,8 +1173,8 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 40px;
-    row-gap: 30px;
+    gap: 20px;
+    row-gap: 10px;
     background: transparent;
     height: auto;
     width: 100%;
@@ -1202,7 +1202,7 @@ footer {
     height: 110px;
   }
   .tarjetasTiraImagenes1 img {
-    width: 6em;
+    width: 5em;
   }
   .tarjetasTiraImagenes1 span {
     width: 6em;
@@ -1226,7 +1226,7 @@ footer {
         justify-content: space-around;
     height: 200px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
   }
   #tarjetaGrande {
     -ms-grid-column: 1;
@@ -1246,11 +1246,11 @@ footer {
     margin-top: 10px;
     padding: 10px;
     height: auto;
-    width: 30%;
+    width: 7em;
   }
   #tarjetaGrande span {
     line-height: 20px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1265,14 +1265,15 @@ footer {
     width: 100%;
   }
   .tarjetasTiraImagenes2 img {
-    width: 100%;
+    width: 8em;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
   .tarjetasTiraImagenes2 h2,
   span {
     width: 100%;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1297,7 +1298,7 @@ footer {
     margin-bottom: 30px;
   }
   .tarjetasTiraImagenes3 img {
-    width: 80%;
+    width: 8em;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -1309,7 +1310,7 @@ footer {
 }
 
 /*---------------iphone x y chicos---------------*/
-@media screen and (max-width: 552px) and (min-width: 10px) {
+@media screen and (max-width: 556px) and (min-width: 10px) {
   .h1-home {
     font-size: 36px;
     color: #1b26bc;
@@ -1359,14 +1360,14 @@ footer {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     text-align: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
   }
   .tira-imagenes img {
-    width: 80%;
+    width: 100%;
     margin: 30px auto 5px auto;
   }
   #tituloHomeMed {
@@ -1416,7 +1417,7 @@ footer {
   }
   .tarjetasTiraImagenes1 span {
     width: 5em;
-    font-size: 15px;
+    font-size: 12px;
   }
   .tarjetasTiraImagenes2 {
     border: #d1d4f2 1px solid;
@@ -1474,14 +1475,14 @@ footer {
     width: 100%;
   }
   .tarjetasTiraImagenes2 img {
-    width: 100%;
+    width: 4em;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  .tarjetasTiraImagenes2 h2,
-  span {
+  .tarjetasTiraImagenes2 span,
+  h2 {
     width: 100%;
-    font-size: 12px;
+    font-size: 15px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1506,7 +1507,7 @@ footer {
     margin-bottom: 3px;
   }
   .tarjetasTiraImagenes3 img {
-    width: 80%;
+    width: 5em;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
