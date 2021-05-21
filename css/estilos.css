@@ -1311,6 +1311,12 @@ footer {
 
 /*---------------iphone x y chicos---------------*/
 @media screen and (max-width: 556px) and (min-width: 10px) {
+  #bodyhome {
+    width: 90%;
+  }
+  .portada {
+    width: 100%;
+  }
   .h1-home {
     font-size: 36px;
     color: #1b26bc;
@@ -1325,7 +1331,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   .titulos-home h2 {
     font-size: 26px;
@@ -1353,6 +1359,45 @@ footer {
     margin-right: auto;
     height: 50px;
     font-size: 25px;
+  }
+  .contenedorModal {
+    width: 90%;
+    height: 100vh;
+    padding-bottom: 15px;
+    background: #fff;
+    -webkit-box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+            box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    position: relative;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  .container.contenidoModal {
+    height: 70vh;
+  }
+  .container.contenidoModal iframe {
+    height: 100%;
+    border: 1px solid #d1d4f2;
+  }
+  .contenedorModal header {
+    text-align: center;
+    width: 100%;
+    background: #0575e6;
+    background: -webkit-gradient(linear, left top, right top, from(#1b26bc), to(#0575e6));
+    background: linear-gradient(to right, #1b26bc, #0575e6);
+    color: #fff;
+    font-size: 25px;
+    -webkit-box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .contenedorModal .btnModal {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
   }
   .tira-imagenes {
     display: -ms-grid;
