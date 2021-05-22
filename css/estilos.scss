@@ -43,6 +43,14 @@ iframe {
   #cotizadorIframe {
     display: flex;
   }
+  #logochico {
+    z-index: 55555555;
+    width: 30%;
+    height: auto;
+    margin-right: 80px;
+    opacity: 1;
+    box-shadow: 5px 5px 10px cornflowerblue;
+  }
   #cotizadorIframe .cubo {
     display: none;
   }
@@ -201,41 +209,6 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
   align-content: flex-start;
   border-bottom: none;
 }
-
-/*---------------menu pages-----------------*/
-.menu {
-  width: 100%;
-}
-
-.menu ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  list-style: none;
-  background: white;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24);
-}
-.menu > ul > li {
-  padding: 6px;
-  margin-left: 40px;
-  margin-right: 40px;
-  position: relative;
-}
-
-.menu > ul > li > a {
-  text-decoration: none;
-
-  color: black;
-  font-size: 20px;
-}
-.menu ul li a:hover {
-  color: rgb(6, 202, 202);
-  transition: 0.2s ease;
-}
-
 /*------------------home--------------------*/
 #bodyHome {
   background: rgb(255, 255, 255);
@@ -245,6 +218,9 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
 
 #home-top {
   margin-top: 90px;
+}
+#logochico {
+  opacity: 0;
 }
 .homeContainer {
   width: 75%;
@@ -573,22 +549,128 @@ footer {
   width: 90%;
   align-self: flex-start;
 }
+/*------------Siniestros---------------------*/
+.siniestroH1 {
+  margin-left: 30px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  color: black;
+  font-size: 40px;
+}
+#imagenFondoSiniestros {
+  margin-top: -100px;
+  top: 350px;
+  right: 300px;
+  width: 45%;
+  height: 50%;
+  position: fixed;
+  z-index: -10;
+}
+.denunciaSiniestro {
+  display: flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(
+    to right,
+    $tituloybotones,
+    $barras
+  ); /*esto es para que se vea en ciertos navegadores*/
+  background: linear-gradient(to right, $tituloybotones, $barras);
+  color: lightyellow;
+  width: 30%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  height: 1200px;
+  border-radius: 10px;
+  padding: 30px 0 30px 30px;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.denunciaSiniestro input,
+.denunciaSiniestro textarea {
+  border-radius: 5px;
+  background: rgba(222, 222, 224, 0.815);
+  color: rgb(19, 19, 51);
+  border: none;
+  border-bottom: 2px solid #abbaab;
+  margin-top: 10px;
+  line-height: 35px;
+}
+.denunciaSiniestro textarea {
+  resize: none;
+  width: 100%;
+}
+.denunciaSiniestro .nombre {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.denunciaSiniestro .fecha {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.denunciaSiniestro .dominio {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.denunciaSiniestro .lugar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.denunciaSiniestro .email {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.denunciaSiniestro .relato {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.enviarSiniestro {
+  height: 50px;
+  background: transparent;
+  color: white;
+  margin: 0px;
+  width: 90%;
+  border-radius: 9999px;
+  background: transparent;
+  border: 1px rgba(222, 222, 224, 0.815) solid;
+  border-radius: 10px;
+}
+.enviarSiniestro:hover {
+  background: $barras;
+  transition: 0.5s ease;
+}
 
 /*------media-----*/
 /*------IPHONE6 hasta IPAD--------*/
 @media screen and (max-width: 1069px) {
   .portada {
     display: flex;
+    flex-direction: row-reverse;
     background: $fondo2;
     width: 100vw;
     position: relative;
     height: 200px;
     margin: 0px 0 10px 00px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 10px 0 10px 30px;
     border-bottom: lightblue 1px solid;
     box-shadow: 0px 0.1px 5px black;
+  }
+  #logochico {
+    z-index: 55555555;
+    width: 10em;
+    height: auto;
+    margin-right: 80px;
+    opacity: 1;
+    box-shadow: 5px 5px 10px cornflowerblue;
   }
   .titulosPortada {
     display: flex;
@@ -615,7 +697,23 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-
+  .contenedorModal {
+    width: 80%;
+    height: 80vh;
+    padding-bottom: 15px;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    position: relative;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  .container.contenidoModal {
+    height: 70vh;
+    iframe {
+      height: 100%;
+      border: 1px solid $bordetarjetas;
+    }
+  }
   #home-top {
     margin-top: 90px;
   }
@@ -843,189 +941,44 @@ footer {
     width: 40%;
     align-self: flex-start;
   }
-}
-/*------- IPAD PRO----*/
-@media screen and (max-width: 1300px) and (min-width: 1074px) {
-  .h1-home {
-    font-size: 36px;
-    color: $tituloybotones;
-    width: 90%;
-    font-weight: 800;
+  .planes__cards__card {
+    min-width: 80vw;
   }
-  .titulos-home {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .titulos-home h2 {
-    font-size: 26px;
-    font-weight: lighter;
-  }
-  .titulos-home img {
-    width: 80%;
-    height: auto;
-  }
-  #bodyHome .lblBtnModal {
-    background: $tituloybotones;
-    padding: 10px 0px;
-    border-radius: 99999px;
-    text-align: center;
-    font-size: 15px;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    margin-bottom: 100px;
-    min-width: 200px;
-    width: 50%;
-    position: relative;
-    top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    font-size: 25px;
-  }
-  .tira-imagenes {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    align-items: stretch;
-  }
-  .tira-imagenes img {
-    width: 65%;
-    margin: 30px auto 5px auto;
-  }
-  #tituloHomeMed {
-    font-size: 50px;
-    text-align: center;
-    width: 50%;
-    display: inline-block;
-    height: auto;
-    color: $tituloybotones;
-  }
-  .tiraImagenesSeccionMedia {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-
-    justify-content: center;
-    gap: 20px;
-    row-gap: 10px;
-    background: transparent;
-
-    height: auto;
-    width: 100%;
-  }
-  .tarjetasTiraImagenes1 {
-    background: white;
-    display: flex;
-    align-items: center;
-    border: $bordetarjetas 1px solid;
-    justify-content: space-between;
-
-    flex-wrap: wrap;
-    font-weight: bold;
-    line-height: 25px;
-
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 10px;
-    width: 100%;
-    height: 110px;
-  }
-  .tarjetasTiraImagenes1 img {
-    width: 5em;
-  }
-  .tarjetasTiraImagenes1 span {
-    width: 6em;
-    font-size: 15px;
-  }
-  .tarjetasTiraImagenes2 {
-    border: $bordetarjetas 1px solid;
-    background: white;
-    display: flex;
-    border-radius: 10px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 25px;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    padding: 20px;
-    margin-bottom: 3px;
-  }
-  #tarjetaGrande {
-    grid-column: 1/3;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0 10px 0 10px;
-  }
-  #tarjetaGrande img {
-    margin-top: 10px;
-    padding: 10px;
-    height: auto;
-    width: 7em;
-  }
-  #tarjetaGrande span {
-    line-height: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    justify-content: space-around;
-    padding: 10px;
-    float: right;
-    width: 100%;
-    height: auto;
-  }
-  #tarjetaGrande h2 {
-    font-size: 20px;
-    line-height: 20px;
-
-    width: 100%;
-  }
-  .tarjetasTiraImagenes2 img {
-    width: 8em;
-
-    align-self: flex-end;
-  }
-  .tarjetasTiraImagenes2 h2,
-  span {
-    width: 100%;
-
-    font-size: 15px;
-    font-weight: bold;
-    align-self: flex-start;
-  }
-  .tarjetasTiraImagenes3 {
-    border: $bordetarjetas 1px solid;
-    background: white;
-    display: flex;
-    border-radius: 10px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 25px;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    padding: 20px;
+  .denunciaSiniestro {
+    width: 85%;
+    margin: auto;
     margin-bottom: 30px;
-  }
-  .tarjetasTiraImagenes3 img {
-    width: 8em;
-    align-self: flex-end;
-  }
-  .tarjetasTiraImagenes3 h2 {
-    width: 40%;
-    align-self: flex-start;
+    height: 1200px;
+    border-radius: 10px;
+    padding: 30px 0 30px 30px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
+
 /*---------------iphone x y chicos---------------*/
-@media screen and (max-width: 556px) and (min-width: 10px) {
+@media screen and (max-width: 681px) and (min-width: 10px) {
   #bodyhome {
     width: 90%;
   }
   .portada {
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: $fondo2;
+    h1 {
+      font-size: 25px;
+    }
+  }
+  #logochico {
+    z-index: 55555555;
+    width: 30%;
+    height: auto;
+    margin-right: 60px;
+    opacity: 1;
+    box-shadow: 5px 5px 10px cornflowerblue;
   }
   .h1-home {
     font-size: 36px;
@@ -1063,7 +1016,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 50px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .contenedorModal {
     width: 90%;
@@ -1130,7 +1083,7 @@ footer {
     gap: 5px;
     row-gap: 10px;
     background: transparent;
-
+    margin: -10px;
     height: auto;
     width: 95%;
   }
@@ -1250,7 +1203,22 @@ footer {
     font-size: 10px;
     width: 70%;
   }
+  .planes__cards__card {
+    min-width: 80vw;
+  }
+  .denunciaSiniestro {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 1200px;
+    border-radius: 10px;
+    padding: 30px 0 30px 30px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
+
 /*------------------planes-------------------
 
 .h2-plan {
@@ -1583,103 +1551,6 @@ video {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-/*------------Siniestros---------------------*/
-.siniestroH1 {
-  margin-left: 30px;
-  margin-bottom: 80px;
-  margin-top: 30px;
-  color: black;
-  font-size: 40px;
-}
-#imagenFondoSiniestros {
-  margin-top: -100px;
-  top: 350px;
-  right: 300px;
-  width: 45%;
-  height: 50%;
-  position: fixed;
-  z-index: -10;
-}
-.denunciaSiniestro {
-  display: flex;
-  flex-direction: column;
-  background: -webkit-linear-gradient(
-    to right,
-    $tituloybotones,
-    $barras
-  ); /*esto es para que se vea en ciertos navegadores*/
-  background: linear-gradient(to right, $tituloybotones, $barras);
-  color: lightyellow;
-  width: 30%;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  height: 1200px;
-  border-radius: 10px;
-  padding: 30px 0 30px 30px;
-  font-size: 20px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.denunciaSiniestro input,
-.denunciaSiniestro textarea {
-  border-radius: 5px;
-  background: rgba(222, 222, 224, 0.815);
-  color: rgb(19, 19, 51);
-  border: none;
-  border-bottom: 2px solid #abbaab;
-  margin-top: 10px;
-  line-height: 35px;
-}
-.denunciaSiniestro textarea {
-  resize: none;
-  width: 100%;
-}
-.denunciaSiniestro .nombre {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.denunciaSiniestro .fecha {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.denunciaSiniestro .dominio {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.denunciaSiniestro .lugar {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.denunciaSiniestro .email {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.denunciaSiniestro .relato {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.enviarSiniestro {
-  height: 50px;
-  background: transparent;
-  color: white;
-  margin: 0px;
-  width: 90%;
-  border-radius: 9999px;
-  background: transparent;
-  border: 1px rgba(222, 222, 224, 0.815) solid;
-  border-radius: 10px;
-}
-.enviarSiniestro:hover {
-  background: $barras;
-  transition: 0.5s ease;
-}
 
 /*---------------Asistencia--------------*/
 
@@ -1824,3 +1695,4 @@ video {
   width: 40%;
   z-index: -10;
 }
+/*--------------extras-------------------*/
