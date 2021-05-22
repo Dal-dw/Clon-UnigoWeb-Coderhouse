@@ -159,7 +159,9 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
 }
 
 /*-----------------menu-----------------------*/
-
+#bootnav {
+  visibility: hidden;
+}
 .menuBody a {
   color: $cuboymenu;
   background: $fondo2;
@@ -433,10 +435,11 @@ footer {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 #tituloHomeMed {
   font-size: 40px;
-
+  font-weight: bold;
   width: 90%;
   margin: 30px 0 30px 100px;
   height: auto;
@@ -490,6 +493,7 @@ footer {
   justify-content: space-around;
   height: 200px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 #tarjetaGrande {
   grid-column: 1/3;
@@ -519,12 +523,16 @@ footer {
   margin-bottom: 15px;
 }
 .tarjetasTiraImagenes2 img {
-  width: 70%;
+  width: 8em;
   align-self: flex-end;
+  margin-bottom: 20px;
 }
 .tarjetasTiraImagenes2 h2 {
-  width: 100%;
+  width: 8em;
   align-self: flex-start;
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: bold;
 }
 .tarjetasTiraImagenes3 {
   border: $bordetarjetas 1px solid;
@@ -801,10 +809,13 @@ footer {
 /*------media-----*/
 /*------IPHONE6 hasta IPAD--------*/
 @media screen and (max-width: 1069px) {
+  #bootnav {
+    visibility: visible;
+  }
   .portada {
     display: flex;
     flex-direction: row-reverse;
-    background: $fondo2;
+    background: rgb(234, 243, 255);
     width: 100vw;
     position: relative;
     height: 200px;
@@ -826,7 +837,7 @@ footer {
     display: flex;
   }
   .h2-portada {
-    font-size: 30px;
+    font-size: 40px;
     width: 90%;
   }
   .h1-portada {
@@ -1117,7 +1128,11 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background: $fondo2;
+    background: rgb(234, 243, 255);
+    .h2-portada {
+      font-weight: bold;
+      font-size: 30px;
+    }
     h1 {
       font-size: 25px;
     }
@@ -1204,13 +1219,33 @@ footer {
     font-size: 20px;
     font-weight: 800;
   }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+  .rv {
+  }
+  .reviews span {
+    color: gold;
+    font-size: 10px;
+    width: 8%;
+  }
+  .reviews p {
+    width: 120em;
+  }
   .tira-imagenes {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 50px;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
   }
   .tira-imagenes img {
     width: 100%;
@@ -1284,17 +1319,17 @@ footer {
   #tarjetaGrande img {
     margin-top: 10px;
 
-    height: auto;
+    height: 2em;
     width: 3em;
   }
   #tarjetaGrande span {
-    line-height: 20px;
+    line-height: 15px;
     font-size: 10px;
     font-weight: 600;
     justify-content: space-around;
     padding: 10px;
     float: right;
-    width: 70%;
+    width: 100%;
     height: auto;
   }
   #tarjetaGrande h2 {
@@ -1368,14 +1403,14 @@ footer {
   }
   .containerBeneficios {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     gap: 1em;
 
     width: 90%;
   }
   .primeraLinea {
-    grid-column: 1/4;
+    grid-column: 1/3;
     background: $tituloybotones;
     gap: 10px;
     border-radius: 20px;
@@ -1386,12 +1421,12 @@ footer {
   }
   .primeraLinea img {
     justify-self: center;
-    width: 30%;
+    width: 40%;
   }
   .primeraLinea h1 {
     align-self: center;
     width: 60%;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     text-align: left;
   }
@@ -1426,6 +1461,9 @@ footer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
+  #imagenFondoSiniestros {
+    visibility: hidden;
+  }
   #formulario-contacto {
     position: relative;
     width: 100%;
@@ -1442,6 +1480,29 @@ footer {
   }
   #imagen-telefono-contacto {
     display: none;
+  }
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+  }
+  #quienes-somos-h1 {
+    color: $tituloybotones;
+    text-shadow: 5px 5px 10px white;
+    font-weight: bold;
+    text-align: center;
+  }
+  #article {
+    font-size: 12px;
+    margin-bottom: 50px;
+    color: white;
+    height: auto;
+  }
+  #transparencia {
+    display: none;
+  }
+  .planes__cards__card__footer__ul {
+    font-size: 15px;
+    padding: 0;
   }
 }
 
