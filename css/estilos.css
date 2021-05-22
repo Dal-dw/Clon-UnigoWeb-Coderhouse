@@ -740,6 +740,187 @@ footer {
       align-self: flex-start;
 }
 
+/*-------------------------contacto-------------------*/
+.formulario-contacto {
+  position: relative;
+  margin: 10px;
+  padding: 30px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+#formulario-contacto {
+  position: relative;
+  width: 30%;
+  display: inline-block;
+  padding: 30px;
+  /*esto es para que se vea en ciertos navegadores*/
+  background: -webkit-gradient(linear, left top, right top, from(#1b26bc), to(#021b79));
+  background: linear-gradient(to right, #1b26bc, #021b79);
+  text-align: left;
+  border-radius: 10px;
+}
+
+#formulario-contacto label {
+  margin-right: 20px;
+  display: block;
+  font-weight: 900;
+  color: white;
+}
+
+#formulario-contacto input {
+  margin-bottom: 10px;
+  background: rgba(240, 240, 243, 0.815);
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  color: #222225;
+}
+
+#formulario-contacto select {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  background: rgba(222, 222, 224, 0.815);
+}
+
+#formulario-contacto select:target-within {
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+#formulario-contacto textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  background: rgba(222, 222, 224, 0.815);
+  resize: none;
+}
+
+#contactanos-h2 {
+  margin: 30px 0 30px 40px;
+  font-size: 30px;
+}
+
+#formulario-contacto .checkbox {
+  width: 4%;
+}
+
+#imagen-telefono-contacto {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  top: 200px;
+}
+
+#formulario-contacto .button {
+  width: 100%;
+  height: 35px;
+  color: white;
+  background: transparent;
+  border: 1px rgba(222, 222, 224, 0.815) solid;
+  border-radius: 10px;
+}
+
+#formulario-contacto .button:hover {
+  width: 100%;
+  height: 35px;
+  color: white;
+  background: #021b79;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/*-----------------------Beneficios--------------*/
+.containerBeneficios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 2em;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.primeraLinea {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  background: #1b26bc;
+  gap: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.primeraLinea img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 30%;
+}
+
+.primeraLinea h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+  font-size: 50px;
+  color: white;
+  text-align: left;
+}
+
+.segundaLinea,
+.terceraLinea {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+          box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+  height: 350px;
+  background: white;
+}
+
+.segundaLinea:hover,
+.terceraLinea:hover {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+          box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+  height: 350px;
+  background: rgba(15, 27, 201, 0.205);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.segundaLinea h2,
+.terceraLinea h2 {
+  font-size: 25px;
+  color: #222225;
+  font-weight: 800;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.segundaLinea img,
+.terceraLinea img {
+  width: 100%;
+  height: auto;
+  background: #f3f3f4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 /*------------Siniestros---------------------*/
 .siniestroH1 {
   margin-left: 30px;
@@ -1576,233 +1757,91 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-}
-
-/*------------------planes-------------------
-
-.h2-plan {
-  position: absolute;
-  top: 90px;
-  left: 200px;
-  font-size: 250%;
-  font-weight: 900;
-}
-.tabla {
-  display: inline-block;
-  width: 100%;
-  height: 900px;
-  position: relative;
-  text-align: center;
-  border-collapse: collapse;
-  top: 120px;
-}
-.basico {
-  position: relative;
-  display: inline-block;
-  height: 655px;
-  width: 25%;
-  padding: 15px;
-  left: 0px;
-}
-.intermedio {
-  position: relative;
-  display: inline-block;
-  height: 655px;
-  width: 25%;
-  padding: 5px;
-  border-radius: 5%;
-}
-.tr {
-  position: relative;
-  display: inline-block;
-  height: 655px;
-  width: 25%;
-  padding: 15px;
-}
-td h4 {
-  margin: 15px 0 15px 0;
-}
-td {
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  height: 160px;
-  font-size: 20px;
-  border-spacing: 0;
-  background: white;
-  border-right: $bordetarjetas 1px solid;
-  border-left: $bordetarjetas 1px solid;
-}
-.table-bottom {
-  height: 300px;
-  border-bottom-left-radius: 5% 10%;
-  border-bottom-right-radius: 5% 10%;
-  text-align: left;
-}
-.table-top {
-  height: 70px;
-  font-size: 25px;
-  border-top-left-radius: 5% 20%;
-  border-top-right-radius: 5% 20%;
-  font-size: 30px;
-  text-shadow: 1px 0px 15px gold;
-}
-th {
-  text-align: center;
-  padding: 20px;
-  background: $tituloybotones;
-  font-size: 25px;
-  border-spacing: 200px;
-  color: rgb(255, 255, 255);
-}
-td ul {
-  list-style: none;
-  padding: 1px;
-}
-td ul li::before {
-  content: "✓ ";
-}
-table button {
-  height: 50px;
-  background: $tituloybotones;
-  color: white;
-  position: relative;
-  margin: 0px;
-  width: 100%;
-  border-radius: 9999px;
-  border-style: none;
-}
-table button:hover {
-  background: $barras;
-  transition: 0.5s ease;
-}
-.tabla-2 {
-  top: 20px;
-  position: relative;
-  width: 89%;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 000px;
-}
-.tabla-2 td {
-  text-align: center;
-  font-size: 30px;
-  border-bottom-left-radius: 2% 15%;
-  border-bottom-right-radius: 2% 15%;
-}
-.tabla-2 td li {
-  list-style: none;
-}
-
-#poliza-img {
-  width: 30%;
-  margin-top: 50px;
-
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  top: -100px;
-}
-
-/*-------------------------contacto-------------------*/
-.formulario-contacto {
-  position: relative;
-  margin: 10px;
-  padding: 30px;
-  text-align: left;
-  border-radius: 10px;
-}
-
-#formulario-contacto {
-  position: relative;
-  width: 30%;
-  display: inline-block;
-  padding: 30px;
-  /*esto es para que se vea en ciertos navegadores*/
-  background: -webkit-gradient(linear, left top, right top, from(#1b26bc), to(#021b79));
-  background: linear-gradient(to right, #1b26bc, #021b79);
-  text-align: left;
-  border-radius: 10px;
-}
-
-#formulario-contacto label {
-  margin-right: 20px;
-  display: block;
-  font-weight: 900;
-  color: white;
-}
-
-#formulario-contacto input {
-  margin-bottom: 10px;
-  background: rgba(240, 240, 243, 0.815);
-  display: block;
-  width: 100%;
-  border-radius: 6px;
-  height: 35px;
-  border: none;
-  margin-top: 10px;
-  color: #222225;
-}
-
-#formulario-contacto select {
-  margin-bottom: 10px;
-  display: block;
-  width: 100%;
-  border-radius: 3px;
-  height: 35px;
-  border: none;
-  margin-top: 10px;
-  background: rgba(222, 222, 224, 0.815);
-}
-
-#formulario-contacto select:target-within {
-  -webkit-transition: 5s ease;
-  transition: 5s ease;
-}
-
-#formulario-contacto textarea {
-  width: 100%;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 10px;
-  background: rgba(222, 222, 224, 0.815);
-  resize: none;
-}
-
-#contactanos-h2 {
-  margin: 30px 0 30px 40px;
-  font-size: 30px;
-}
-
-#formulario-contacto .checkbox {
-  width: 4%;
-}
-
-#imagen-telefono-contacto {
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  top: 200px;
-}
-
-#formulario-contacto .button {
-  width: 100%;
-  height: 35px;
-  color: white;
-  background: transparent;
-  border: 1px rgba(222, 222, 224, 0.815) solid;
-  border-radius: 10px;
-}
-
-#formulario-contacto .button:hover {
-  width: 100%;
-  height: 35px;
-  color: white;
-  background: #021b79;
-  border-radius: 10px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  .containerBeneficios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 1em;
+    width: 90%;
+  }
+  .primeraLinea {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    background: #1b26bc;
+    gap: 10px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .primeraLinea img {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 30%;
+  }
+  .primeraLinea h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+  }
+  .segundaLinea,
+  .terceraLinea {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+            box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+    height: 350px;
+    background: white;
+  }
+  .segundaLinea:hover,
+  .terceraLinea:hover {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+            box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
+    height: 350px;
+    background: rgba(15, 27, 201, 0.205);
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+  }
+  .segundaLinea h2,
+  .terceraLinea h2 {
+    font-size: 20px;
+    color: #222225;
+    font-weight: 800;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .segundaLinea img,
+  .terceraLinea img {
+    width: 100%;
+    height: 100px;
+    background: #f3f3f4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #formulario-contacto {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: 30px;
+    /*esto es para que se vea en ciertos navegadores*/
+    background: -webkit-gradient(linear, left top, right top, from(#1b26bc), to(#021b79));
+    background: linear-gradient(to right, #1b26bc, #021b79);
+    text-align: left;
+    border-radius: 10px;
+  }
+  #imagen-telefono-contacto {
+    display: none;
+  }
 }
 
 /*--------------Quienes Somos----------*/
@@ -1859,87 +1898,6 @@ video {
   background-size: 200%;
   position: relative;
   text-align: center;
-}
-
-/*-----------------------Beneficios--------------*/
-.containerBeneficios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  gap: 2em;
-  margin: 50px auto;
-  width: 80%;
-}
-
-.primeraLinea {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  background: #1b26bc;
-  gap: 10px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 40px;
-  padding-right: 10px;
-  width: 100%;
-}
-
-.primeraLinea img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 30%;
-}
-
-.primeraLinea h1 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 60%;
-  font-size: 50px;
-  color: white;
-  text-align: left;
-}
-
-.segundaLinea,
-.terceraLinea {
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
-          box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
-  height: 350px;
-  background: white;
-}
-
-.segundaLinea:hover,
-.terceraLinea:hover {
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
-          box-shadow: 0px 0px 10px 0px rgba(55, 81, 129, 0.568);
-  height: 350px;
-  background: rgba(15, 27, 201, 0.205);
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-
-.segundaLinea h2,
-.terceraLinea h2 {
-  font-size: 25px;
-  color: #222225;
-  font-weight: 800;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-.segundaLinea img,
-.terceraLinea img {
-  width: 100%;
-  height: auto;
-  background: #f3f3f4;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 /*---------------Asistencia--------------*/
