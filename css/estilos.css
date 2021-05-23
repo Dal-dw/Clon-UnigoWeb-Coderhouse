@@ -1583,8 +1583,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    margin-left: 25px;
     margin-bottom: 50px;
     padding: 10px;
   }
@@ -1595,6 +1594,7 @@ footer {
   }
   .reviews p {
     width: 120em;
+    text-align: start;
   }
   .tira-imagenes {
     display: -ms-grid;
@@ -1617,9 +1617,9 @@ footer {
     margin: 30px auto 5px auto;
   }
   #tituloHomeMed {
-    font-size: 30px;
-    text-align: center;
-    width: 50%;
+    font-size: 35px;
+    text-align: start;
+    width: 100%;
     display: inline-block;
     height: auto;
     color: #1b26bc;
