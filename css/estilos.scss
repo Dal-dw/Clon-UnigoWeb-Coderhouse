@@ -161,6 +161,8 @@ $bordetarjetas: #d1d4f2; /*border tarjetass*/
 /*-----------------menu-----------------------*/
 #bootnav {
   visibility: hidden;
+  background: $tituloybotones;
+  box-shadow: 0px 0px 10px 1px $barras;
 }
 .menuBody a {
   color: $cuboymenu;

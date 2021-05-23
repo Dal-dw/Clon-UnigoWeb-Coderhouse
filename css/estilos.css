@@ -211,6 +211,9 @@ iframe {
 /*-----------------menu-----------------------*/
 #bootnav {
   visibility: hidden;
+  background: #1b26bc;
+  -webkit-box-shadow: 0px 0px 10px 1px #021b79;
+          box-shadow: 0px 0px 10px 1px #021b79;
 }
 
 .menuBody a {
