@@ -1460,8 +1460,12 @@ footer {
 
 /*---------------iphone x y chicos---------------*/
 @media screen and (max-width: 681px) and (min-width: 10px) {
-  #bodyhome {
-    width: 90%;
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #bodyHome {
+    width: 100%;
   }
   .portada {
     width: 100%;
@@ -1608,12 +1612,12 @@ footer {
   .tira-imagenes {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
     gap: 50px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1623,7 +1627,7 @@ footer {
   }
   .tira-imagenes img {
     width: 100%;
-    margin: 30px auto 5px auto;
+    margin: 0;
   }
   #tituloHomeMed {
     font-size: 30px;
@@ -1637,14 +1641,13 @@ footer {
     display: -ms-grid;
     display: grid;
     justify-items: center;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     gap: 5px;
     row-gap: 10px;
     background: transparent;
-    margin: -10px;
+    margin: 0;
     height: auto;
-    width: 95%;
   }
   .tarjetasTiraImagenes1 {
     background: white;
@@ -1778,7 +1781,7 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     text-align: center;
     color: #1b26bc;
     margin-top: 20px;

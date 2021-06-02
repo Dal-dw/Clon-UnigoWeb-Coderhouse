@@ -1122,8 +1122,11 @@ footer {
 
 /*---------------iphone x y chicos---------------*/
 @media screen and (max-width: 681px) and (min-width: 10px) {
-  #bodyhome {
-    width: 90%;
+  * {
+    box-sizing: border-box;
+  }
+  #bodyHome {
+    width: 100%;
   }
   .portada {
     width: 100%;
@@ -1234,6 +1237,7 @@ footer {
   }
   .reviews {
     display: flex;
+
     flex-direction: column;
     width: 100%;
     margin-left: 25px;
@@ -1252,17 +1256,18 @@ footer {
   }
   .tira-imagenes {
     display: grid;
-    grid-template-columns: 50% 50%;
+
+    grid-template-columns: 40% 40%;
     gap: 50px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
     align-items: center;
     justify-content: center;
   }
   .tira-imagenes img {
     width: 100%;
-    margin: 30px auto 5px auto;
+    margin: 0;
   }
   #tituloHomeMed {
     font-size: 30px;
@@ -1275,14 +1280,13 @@ footer {
   .tiraImagenesSeccionMedia {
     display: grid;
     justify-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 
     gap: 5px;
     row-gap: 10px;
     background: transparent;
-    margin: -10px;
+    margin: 0;
     height: auto;
-    width: 95%;
   }
   .tarjetasTiraImagenes1 {
     background: white;
@@ -1389,7 +1393,7 @@ footer {
   #home-bottom {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     text-align: center;
     color: $tituloybotones;
     margin-top: 20px;
