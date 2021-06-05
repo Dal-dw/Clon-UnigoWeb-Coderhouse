@@ -949,7 +949,7 @@ footer {
   right: 300px;
   width: 45%;
   height: 50%;
-  position: fixed;
+  position: absolute;
   z-index: -10;
 }
 
@@ -1095,7 +1095,7 @@ footer {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     background: #eaf3ff;
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 200px;
     margin: 0px 0 10px 00px;
@@ -1138,10 +1138,8 @@ footer {
   }
   #bodyHome {
     background: white;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
   }
   .contenedorModal {
     width: 80%;
