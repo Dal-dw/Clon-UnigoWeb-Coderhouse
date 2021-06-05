@@ -10,7 +10,6 @@
 
 body {
   background: #abbaab;
-  /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#e0e6e0));
   background: linear-gradient(to right, #ffffff, #e0e6e0);
@@ -23,6 +22,7 @@ footer {
 }
 
 iframe {
+  /*modal cotizador*/
   width: 100%;
   height: 70vh;
   opacity: 0.9;
@@ -36,58 +36,12 @@ iframe {
   margin-right: auto;
 }
 
-#cotizadorIframe {
-  background-image: url(../img/Fondo-Verde.jpg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 768px) {
-  #cotizadorIframe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #logochico {
-    width: 30%;
-    height: auto;
-    margin-right: 80px;
-    opacity: 1;
-    -webkit-box-shadow: 5px 5px 10px cornflowerblue;
-            box-shadow: 5px 5px 10px cornflowerblue;
-  }
-  #cotizadorIframe .cubo {
-    display: none;
-  }
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-  #paso2 a {
-    height: 4.2em;
-    width: 100%;
-  }
-  #paso3 {
-    width: 100%;
-  }
-  #paso4 a {
-    height: 6em;
-    width: 6em;
-  }
-}
-
-#cotizadorIframe .cubo {
-  margin-top: 10px;
-  margin-left: 50px;
-}
-
 /*PALETA DE COLORES*/
 /*azul de titulo y botones */
 /*azul barra men  o barras superiores*/
 /*Fondo*/
 /*fondo2*/
-/*border tarjetass*/
+/*border tarjetas*/
 /*----------------portada--------------------*/
 .portada {
   display: -webkit-box;
@@ -131,6 +85,7 @@ iframe {
 }
 
 .cubo {
+  /*Cubo giratorio logo*/
   width: 100px;
   height: 100px;
   -webkit-transform-style: preserve-3d;
@@ -208,8 +163,10 @@ iframe {
           transform: translateY(50px) rotateX(90deg);
 }
 
+/*hasta acá cubo giratorio*/
 /*-----------------menu-----------------------*/
 #bootnav {
+  /*nav bar bootstrap (no aplica en tamaño pc escritorio)*/
   visibility: hidden;
   background: #1b26bc;
   -webkit-box-shadow: 0px 0px 10px 1px #021b79;
@@ -217,6 +174,7 @@ iframe {
 }
 
 .menuBody a {
+  /*menu para pc escritorio*/
   color: #080d58;
   background: #f3f4fb;
   border-bottom: 1px solid #d1d4f2;
@@ -261,6 +219,7 @@ iframe {
 }
 
 .submenu li {
+  /*habìa que incluirlo por consigna*/
   display: none;
   position: absolute;
   top: 0;
@@ -287,6 +246,7 @@ iframe {
 
 /*------------------home--------------------*/
 #bodyHome {
+  /*home == index.html*/
   background: white;
   width: 100%;
   height: auto;
@@ -374,6 +334,7 @@ footer {
 }
 
 .tira-imagenes {
+  /*imagenes de los pasos para contratar (animadas con la libreria "animatecss"*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -436,6 +397,7 @@ footer {
 
 /*-------------------Cotizador--------------*/
 #bodyHome #modal {
+  /*esta seccion incluye lo qrelacionado al call to action (el modal está hecho con css)*/
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -567,6 +529,7 @@ footer {
 
 /*--------------home seccion media------------*/
 #home-med {
+  /*esta seccion es la parte media de index.com donde el fondo es celeste*/
   height: auto;
   width: 100%;
   background: #f3f4fb;
@@ -611,6 +574,7 @@ footer {
 }
 
 .tarjetasTiraImagenes1 {
+  /*bordes redondeados, lineas suaves, paleta de colores*/
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +717,8 @@ footer {
       align-self: flex-start;
 }
 
-/*-------------------------contacto-------------------*/
+/*-------------------------pagina contacto-------------------*/
+/*todas las paginas internas tienen una animacion de transicion suave al cargar (es una libreria llamada "animatecss" y un fodo gradiente gris*/
 .formulario-contacto {
   position: relative;
   margin: 10px;
@@ -853,7 +818,8 @@ footer {
   transition: 0.3s ease;
 }
 
-/*-----------------------Beneficios--------------*/
+/*-----------------------pagina Beneficios--------------*/
+/*todas las paginas internas tienen una animacion de transicion suave al cargar (es una libreria llamada "animatecss" y un fodo gradiente gris*/
 .containerBeneficios {
   display: -ms-grid;
   display: grid;
@@ -934,7 +900,7 @@ footer {
   border-top-right-radius: 20px;
 }
 
-/*------------Siniestros---------------------*/
+/*-----------------------pagina Siniestros---------------------*/
 .siniestroH1 {
   margin-left: 30px;
   margin-bottom: 80px;
@@ -1080,7 +1046,7 @@ footer {
   transition: 0.5s ease;
 }
 
-/*------media-----*/
+/*------mediaqueries desde acá-----*/
 /*------IPHONE6 hasta IPAD--------*/
 @media screen and (max-width: 1069px) {
   #bootnav {
@@ -1934,7 +1900,8 @@ footer {
   }
 }
 
-/*--------------Quienes Somos----------*/
+/*hasta aca mediaqueries*/
+/*--------------pagina Quienes Somos----------*/
 .quienes-somos {
   color: #c4bdbd;
   width: 80%;
@@ -1990,7 +1957,7 @@ video {
   text-align: center;
 }
 
-/*---------------Asistencia--------------*/
+/*---------------pagina Asistencia--------------*/
 .contenedorAsistencia {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2060,7 +2027,7 @@ video {
   height: 80vh;
 }
 
-/*-----------------------------RESULTADO----------------------------------------*/
+/*-----------------------------RESULTADO (del call to action)----------------------------------------*/
 .precios__card__h3--green {
   color: green;
 }
@@ -2073,7 +2040,8 @@ video {
   color: crimson;
 }
 
-/*----------------------------PLANES2----------------------------------------------*/
+/*----------------------------PAGINA PLANES2 ----------------------------------------------*/
+/*esta pagina la volvi a hacer para cumplir las consignas SASS, cuando llegamos a SASS ya tenìa todas las paginas hechas con sus estilos por lo que tuve que elegir una para rehacer*/
 .planes {
   width: 90%;
   margin: auto;
@@ -2172,4 +2140,6 @@ video {
 }
 
 /*--------------extras-------------------*/
+/*Si bien el sitio está basado tomando ejemplos de  de otras paginas (solo el diseño), todo el código es 100% mio, no se trata de templates. Mi idea es aprender a desarrollar el código, no aprender a diseñar la parte gráfica. Eso es algo que haré más adelante.
+Por otro lado, no usé 100% bootstrap ya que me parece que hay que aprender tanto bootstrap como CSS para ser desarrollador. Usar solo bootstrap solo porque es mas facil para algunas cosas no sirve para aprender propiamente.*/
 /*# sourceMappingURL=estilos.css.map */
